@@ -46,9 +46,11 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
+     <Compile Include="Assets\Scripts\DestroyAfterAnimation.cs" />
      <Compile Include="Assets\Scripts\PlayerStateList.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Folder Include="Assets" />
+     <Folder Include="Assets\Knight Files" />
      <None Include="Library\PackageCache\com.unity.modules.subsystems@1.0.0\package.json" />
      <None Include="Library\PackageCache\com.unity.modules.jsonserialize@1.0.0\package.json" />
      <Folder Include="Library\PackageCache\com.unity.test-framework@1.1.33" />
@@ -80,6 +82,7 @@
      <Folder Include="Library\PackageCache\com.unity.burst@1.8.9\Tests" />
      <Folder Include="Assets\GothicVania Church\Sprites\Enemies\Angel-Attack" />
      <None Include="Library\PackageCache\com.unity.burst@1.8.9\ValidationConfig.json" />
+     <Folder Include="Assets\Prefabs" />
      <Folder Include="Assets\GothicVania Church\Sprites\Misc\Fireball" />
      <None Include="Library\PackageCache\com.unity.timeline@1.7.6\package.json" />
      <Folder Include="Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom" />
@@ -151,6 +154,7 @@
      <Folder Include="Library\PackageCache\com.unity.2d.psdimporter@8.0.2" />
      <Folder Include="Library\PackageCache\com.unity.modules.androidjni@1.0.0" />
      <None Include="Library\PackageCache\com.unity.2d.tilemap.extras@3.1.2\package.json" />
+     <Folder Include="Assets\Knight Files\Effect &amp; FireBalls" />
      <Folder Include="Assets\GothicVania Church\Sprites\Misc\Enemy-Death" />
      <Folder Include="Library\PackageCache\com.unity.textmeshpro@3.0.6\Editor Resources\Gizmos" />
      <None Include="Library\PackageCache\com.unity.modules.audio@1.0.0\package.json" />

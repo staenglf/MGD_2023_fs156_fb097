@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
+     <Compile Include="Assets\Scripts\DestroyAfterAnimation.cs" />
      <Compile Include="Assets\Scripts\PlayerStateList.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Reference Include="UnityEngine">
