@@ -56,7 +56,7 @@ public class PlayerController : MonoBehaviour
     Animator anim;
     public static PlayerController Instance;
 
-    //Drws red lines out the attack area
+    //Draws red lines out the attack area
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
@@ -101,6 +101,7 @@ public class PlayerController : MonoBehaviour
         Jump();
         StartDash();
         Attack();
+        Recoil();
     }
 
     //Sets the input buttons
@@ -202,7 +203,6 @@ public class PlayerController : MonoBehaviour
             if (objectToHit[i].GetComponent<Enemy>() != null)
             {
                 objectToHit[i].GetComponent<Enemy>().EnemyHit(damage, (transform.position - objectToHit[i].transform.position).normalized, _recoilStrength);
-                Recoil();
             }
         }
     }
