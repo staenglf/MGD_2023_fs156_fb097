@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -41,6 +42,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Vector2 SideAttackArea, UpAttackArea, DownAttackArea;
     [SerializeField] LayerMask attackableLayer;
     [SerializeField] float damage;
+    [Space(5)]
 
     [Header("Recoil")]
     [SerializeField] int recoilXSteps = 5;
@@ -48,8 +50,14 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float recoilXSpeed = 100;
     [SerializeField] float recoilYSpeed = 100;
     int stepsXRecoiled, stepsYRecoiled;
+    [Space(5)]
 
-    PlayerStateList pState;
+    [Header("Health Settings")]
+    public int health;
+    public int maxHealth;
+    [Space(5)]
+
+    [HideInInspector] public PlayerStateList pState;
     private Rigidbody2D rb;
     private float xAxis, yAxis;
     private float gravity;
@@ -76,6 +84,8 @@ public class PlayerController : MonoBehaviour
         {
             Instance = this;
         }
+
+        health = maxHealth;
     }
 
     // Start is called before the first frame update
@@ -265,16 +275,40 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    //Stops Recoil on X-Axis
     void StopRecoilX()
     {
         stepsXRecoiled = 0;
         pState.recoilingX = false;
     }
 
+    //Stops Recoil on Y-Axis
     void StopRecoilY()
     {
         stepsYRecoiled = 0;
         pState.recoilingY = false;
+    }
+
+    //Reduces Health by hit
+    public void TakeDamage(float _damage)
+    {
+        health -= Mathf.RoundToInt(_damage);
+        StartCoroutine(StopTakingDamage());
+    }
+
+    IEnumerator StopTakingDamage()
+    {
+        pState.invincible = true;
+        anim.SetTrigger("TakeDamage");
+        ClampHealth();
+        yield return new WaitForSeconds(1f);
+        pState.invincible = false;
+    }
+
+    //Sets the health of the player
+    void ClampHealth()
+    {
+        health = Mathf.Clamp(health, 0, maxHealth);
     }
 
     //Checks if a player stands on a ground

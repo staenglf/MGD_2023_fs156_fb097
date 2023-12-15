@@ -4,26 +4,30 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] float health;
-    [SerializeField] float recoilLength;
-    [SerializeField] float recoilFactor;
-    [SerializeField] bool isRecoiling = false;
-    float recoilTimer;
-    Rigidbody2D rb;
+    [SerializeField] protected float health;
+    [SerializeField] protected float recoilLength;
+    [SerializeField] protected float recoilFactor;
+    [SerializeField] protected bool isRecoiling = false;
+    [SerializeField] protected PlayerController player;
+    [SerializeField] protected float speed;
+    [SerializeField] protected float damage;
+    protected float recoilTimer;
+    protected Rigidbody2D rb;
 
-    private void Awake()
+    protected virtual void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        player = PlayerController.Instance;
     }
 
     // Start is called before the first frame update
-    void Start()
+    protected virtual void Start()
     {
         
     }
 
     // Update is called once per frame
-    void Update()
+    protected virtual void Update()
     {
         if(health <= 0)
         {
@@ -45,7 +49,7 @@ public class Enemy : MonoBehaviour
     }
 
     //Sets recoil in the direction that the hit comes from and zeros the health
-    public void EnemyHit(float _damageDone, Vector2 _hitDirection, float _hitForce)
+    public virtual void EnemyHit(float _damageDone, Vector2 _hitDirection, float _hitForce)
     {
         health -= _damageDone;
 
@@ -53,5 +57,18 @@ public class Enemy : MonoBehaviour
         {
             rb.AddForce(-_hitForce * recoilFactor * _hitDirection);
         }
+    }
+
+    protected void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player") && !PlayerController.Instance.pState.invincible)
+        {
+            Attack();
+        }
+    }
+
+    protected virtual void Attack()
+    {
+        PlayerController.Instance.TakeDamage(damage);
     }
 }

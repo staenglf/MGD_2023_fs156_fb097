@@ -378,6 +378,7 @@
 "Assets/Scripts/Enemy.cs"
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/PlayerStateList.cs"
+"Assets/Scripts/Zombie.cs"
 -langversion:9.0
 
 /deterministic
