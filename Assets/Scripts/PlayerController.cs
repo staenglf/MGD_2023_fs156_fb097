@@ -208,7 +208,7 @@ public class PlayerController : MonoBehaviour
             _recoilDir = true;
         }
 
-        for(int i = 0; i < objectToHit.Length; i++)
+        for(int i = 0; i < objectToHit.Length - 1; i++)
         {
             if (objectToHit[i].GetComponent<Enemy>() != null)
             {
