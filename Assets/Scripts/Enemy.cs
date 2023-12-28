@@ -8,9 +8,12 @@ public class Enemy : MonoBehaviour
     [SerializeField] protected float recoilLength;
     [SerializeField] protected float recoilFactor;
     [SerializeField] protected bool isRecoiling = false;
+    
     [SerializeField] protected PlayerController player;
+    
     [SerializeField] protected float speed;
     [SerializeField] protected float damage;
+    
     protected float recoilTimer;
     protected Rigidbody2D rb;
 
@@ -59,11 +62,23 @@ public class Enemy : MonoBehaviour
         }
     }
 
+    /* had to be replaced with oncollisionstay2d because of buggy behavior
     protected void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.CompareTag("Player") && !PlayerController.Instance.pState.invincible)
         {
             Attack();
+            PlayerController.Instance.HitStopTime(0, 5, 0.5f);
+        }
+    }
+    */
+    
+    protected void OnCollisionStay2D(Collision2D _other)
+    {
+        if(_other.gameObject.CompareTag("Player") && !PlayerController.Instance.pState.invincible)
+        {
+            Attack();
+            PlayerController.Instance.HitStopTime(0, 5, 0.5f);
         }
     }
 

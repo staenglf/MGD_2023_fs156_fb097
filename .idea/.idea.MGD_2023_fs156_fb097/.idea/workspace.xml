@@ -5,36 +5,194 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="86a76fba-6c2d-4215-bef4-f875ffd6db0b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerStateList.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerStateList.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DocCodeExamples.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OverloadedFunctionPointers.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SeparateAssembly.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unity.2D.Animation.EditorTests.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unity.2D.Aseprite.EditorTests.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unity.2D.Common.EditorTests.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unity.2D.PixelPerfect.EditorTests.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unity.2D.Psdimporter.EditorTests.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unity.2D.Sprite.Package.EditorTests.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unity.2D.SpriteShape.EditorTests.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unity.2D.Tilemap.Extras.Placeholder.EditorTests.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unity.2D.Tilemap.Package.EditorTests.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unity.Burst.Editor.Tests.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unity.Burst.Tests.UnitTests.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unity.Collections.Tests.Playmode.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unity.Collections.Tests.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unity.Mathematics.Tests.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unity.TextMeshPro.Editor.Tests.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unity.TextMeshPro.Tests.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UnityEditor.UI.EditorTests.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UnityEngine.UI.Tests.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.MGD_2023_fs156_fb097/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.MGD_2023_fs156_fb097/.idea/projectSettingsUpdater.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.MGD_2023_fs156_fb097/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Explosion.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Explosion.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Fireball.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Fireball.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Player_Cast.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Player_Cast.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Up Spell Explosion.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Up Spell Explosion.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/fireball_01.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/fireball_01.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/Heart Stuff.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/Heart Stuff/Heart_Container.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/Heart Stuff/Heart_Container.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/Heart Stuff/Heart_Fill.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/Heart Stuff/Heart_Fill.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Body Parts.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Body Parts/Body lower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Body Parts/Body lower.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Body Parts/Head.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Body Parts/Head.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Body Parts/Left Arm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Body Parts/Left Arm.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Body Parts/Legs 2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Body Parts/Legs 2.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Body Parts/Legs.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Body Parts/Legs.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Body Parts/Right Arm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Body Parts/Right Arm.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Body Parts/body upper.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Body Parts/body upper.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Body Parts/sword.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Body Parts/sword.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Demo.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Demo.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/DemoSettings.lighting" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/DemoSettings.lighting.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight AI.ai" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight AI.ai.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight EPS.eps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight EPS.eps.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_attack_01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_attack_01.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_attack_02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_attack_02.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_attack_03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_attack_03.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_attack_04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_attack_04.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_attack_05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_attack_05.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_attack_06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_attack_06.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_block_01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_block_01.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_block_02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_block_02.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_block_03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_block_03.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_block_04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_block_04.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_cast_01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_cast_01.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_cast_02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_cast_02.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_cast_03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_cast_03.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_cast_04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_cast_04.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_cast_05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_cast_05.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_crouch_0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_crouch_0.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_dash_01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_dash_01.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_dash_02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_dash_02.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_dash_03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_dash_03.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_die_01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_die_01.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_die_02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_die_02.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_die_03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_die_03.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_die_04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_die_04.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_die_05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_die_05.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_die_06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_die_06.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_die_07.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_die_07.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_die_08.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_die_08.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_dizzy_01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_dizzy_01.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_dizzy_02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_dizzy_02.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_dizzy_03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_dizzy_03.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_hurt_01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_hurt_01.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_hurt_02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_hurt_02.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_idle_01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_idle_01.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_idle_02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_idle_02.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_idle_03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_idle_03.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_idle_04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_idle_04.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_idle_05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_idle_05.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_idle_06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_idle_06.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_jumpAttack_01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_jumpAttack_01.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_jumpAttack_02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_jumpAttack_02.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_jumpAttack_03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_jumpAttack_03.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_jumpAttack_04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_jumpAttack_04.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_jumpAttack_05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_jumpAttack_05.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_jumpAttack_06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_jumpAttack_06.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_jump_01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_jump_01.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_jump_02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_jump_02.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_strike_01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_strike_01.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_strike_02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_strike_02.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_strike_03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_strike_03.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_walk_01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_walk_01.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_walk_02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_walk_02.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_walk_03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_walk_03.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_walk_04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_walk_04.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_walk_05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_walk_05.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_walk_06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_walk_06.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_win_01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_win_01.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_win_02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Knight PNG/Knight_win_02.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Read Me.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Knight Files/Read Me.txt.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Blood Material.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Blood Material.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Blood Spurt.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Blood Spurt.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Fireball.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Fireball.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Heart Container.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Heart Container.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Up Spell Explosion.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Up Spell Explosion.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Fireball.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Fireball.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/HeartController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/HeartController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player_Heal.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player_Heal.anim.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MGD_2023_fs156_fb097/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MGD_2023_fs156_fb097/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.Player.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.Player.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Player.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerStateList.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerStateList.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Zombie.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Zombie.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Zombie.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Zombie.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ArtifactDB-lock" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB-lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/5b/5b9d23c4b20df266073bfb729d8e6af5" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/Bee/1900b0aE-inputdata.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/1900b0aE-inputdata.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/Bee/1900b0aE.dag" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/1900b0aE.dag" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/Bee/1900b0aE.dag.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/1900b0aE.dag.json" afterDir="false" />
@@ -448,93 +606,6 @@
       <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/1900b0aE.dag/post-processed/UnityEditor.UI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/1900b0aE.dag/post-processed/UnityEditor.UI.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/1900b0aE.dag/post-processed/UnityEngine.UI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/1900b0aE.dag/post-processed/UnityEngine.UI.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/1900b0aE.dag/post-processed/UnityEngine.UI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/1900b0aE.dag/post-processed/UnityEngine.UI.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/Unity.CompilationPipeline.Common.dll_3AAEFBE65CE98BB0.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEditor.CoreModule.dll_431E85A617E2A342.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEditor.DeviceSimulatorModule.dll_926D2B195BEC1C1F.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEditor.DiagnosticsModule.dll_A67C459F9DC5AEAD.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEditor.EditorToolbarModule.dll_901B9CE39A8D7C0F.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEditor.GraphViewModule.dll_0789CA4FD66C3EE4.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEditor.Graphs.dll_690369FE7ACF6B74.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEditor.PresetsUIModule.dll_C2F00331D8C496E9.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEditor.QuickSearchModule.dll_318BC6ACF69CAB06.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEditor.SceneTemplateModule.dll_B3BB0DA1997A2647.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEditor.SceneViewModule.dll_4639AD57CB8F0BF2.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEditor.TextCoreFontEngineModule.dll_132925DC02CDA280.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEditor.TextCoreTextEngineModule.dll_5B115C4D92515B9E.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEditor.UIBuilderModule.dll_5C12776C4924B818.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEditor.UIElementsModule.dll_7CC3BC782BC99F3E.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEditor.UIElementsSamplesModule.dll_2774BB72C3E9800F.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEditor.UnityConnectModule.dll_6C261F44AB06F2F8.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEditor.WindowsStandalone.Extensions.dll_043AF99BA411347E.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEditor.dll_2C6DDFD7B4B5E2B3.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.AIModule.dll_958DBB398EA19D56.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.ARModule.dll_4F00803CEBBEFC1F.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.AccessibilityModule.dll_E660793899F04DE4.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.AndroidJNIModule.dll_FB0CA54B74E90E14.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.AnimationModule.dll_D60F4678B0C9138A.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.AssetBundleModule.dll_7574F99E59035FF8.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.AudioModule.dll_E022B0A53AAB81FC.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.ClothModule.dll_470B0DA014C860E0.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.ClusterInputModule.dll_EBC2945A5C8EC5BE.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.ClusterRendererModule.dll_9819ED8ACBA729A3.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.ContentLoadModule.dll_0E8B52DF278607E5.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.CoreModule.dll_663F58F8BFE80E6D.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.CrashReportingModule.dll_8D1DAC88172B6825.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.DSPGraphModule.dll_96E35984CAD2E0EB.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.DirectorModule.dll_9191F81B58720FCA.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.GIModule.dll_2DCA04472A508570.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.GameCenterModule.dll_2559EF663B29FF05.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.GridModule.dll_43B074E6D83CA464.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.HotReloadModule.dll_5758047E8BFC2F0C.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.IMGUIModule.dll_1882500C00DD15DD.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.ImageConversionModule.dll_040BEB3B4DCBE197.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.InputLegacyModule.dll_06BA14BCF0F515E9.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.InputModule.dll_46987855B0E3A6A0.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.JSONSerializeModule.dll_46780274992BAE6E.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.LocalizationModule.dll_2A0F5EACF40AB8B7.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.NVIDIAModule.dll_B799F8A1111E0279.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.ParticleSystemModule.dll_E02FF5D4853CF3B3.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.PerformanceReportingModule.dll_E1B14D67211F502C.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.Physics2DModule.dll_22B5366951C60B1F.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.PhysicsModule.dll_6F6E7695D0B1844D.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.ProfilerModule.dll_C3D83151F1CB96D7.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.PropertiesModule.dll_52952EA4AE156341.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll_FC0A74906F4439E8.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.ScreenCaptureModule.dll_605FAFF9AD97DAD0.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.SharedInternalsModule.dll_881D2A10C4F9DCE7.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.SpriteMaskModule.dll_0E8661F65C99947F.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.SpriteShapeModule.dll_8ED626F90EA59802.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.StreamingModule.dll_8AA433C90050CAC8.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.SubstanceModule.dll_674F48124BA3C8D6.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.SubsystemsModule.dll_7933C8582AE17C92.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.TLSModule.dll_1412F4782AF279E1.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.TerrainModule.dll_89B4F204A66FCD3B.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.TerrainPhysicsModule.dll_E0AA9EA79E7FEE40.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.TextCoreFontEngineModule.dll_9188A12F15CB614B.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.TextCoreTextEngineModule.dll_D970D7A0A54F1A69.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.TextRenderingModule.dll_899F220464CF5AC5.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.TilemapModule.dll_28B15985BE2CAE44.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.UIElementsModule.dll_7D7229C02E0DB889.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.UIModule.dll_91015966EAE8A302.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.UmbraModule.dll_5AF75CBDC7D22D6F.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.UnityAnalyticsCommonModule.dll_7CF00AAB3B07EE8A.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.UnityAnalyticsModule.dll_FFCF669E316445AF.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.UnityConnectModule.dll_5985A353A58EF3A3.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.UnityCurlModule.dll_092BE7AA20DD0577.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.UnityTestProtocolModule.dll_E33771651DE4D565.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.UnityWebRequestAssetBundleModule.dll_E2964BE09A8A93C0.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.UnityWebRequestAudioModule.dll_59ADA145A78A1AC4.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.UnityWebRequestModule.dll_15AAF2E558C07C16.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.UnityWebRequestTextureModule.dll_C9CFE1DD70D57119.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.UnityWebRequestWWWModule.dll_A4331CFC950ED6D5.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.VFXModule.dll_94F18CE7015FE34E.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.VRModule.dll_E3D37FEC8CA3287A.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.VehiclesModule.dll_0954F19AD29BDF65.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.VideoModule.dll_052C350FFD3D9DA1.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.VirtualTexturingModule.dll_95E784EC8E0862CB.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.WindModule.dll_DC8E3421511E8CD6.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.XRModule.dll_169242F115DD75D8.mvfrm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.dll_5F1226B013296F98.mvfrm" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/rsp/10292501669419677951.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/rsp/10292501669419677951.rsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/rsp/10571807241835812913.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/rsp/10571807241835812913.rsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/rsp/10654656162358534522.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/rsp/10654656162358534522.rsp" afterDir="false" />
@@ -748,6 +819,7 @@
       <change beforePath="$PROJECT_DIR$/Library/BurstCache/JIT/Objects/f27d93aeace7fc45e08cc9e7d44da586.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Library/BurstCache/JIT/Objects/f27d93aeace7fc45e08cc9e7d44da586.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/BurstCache/JIT/Objects/fbfe4df2502f0e1c5f30c653896fe71c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Library/BurstCache/JIT/Objects/fbfe4df2502f0e1c5f30c653896fe71c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/BurstCache/JIT/Objects/fc4081957ac5438510c81955fb109688.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Library/BurstCache/JIT/Objects/fc4081957ac5438510c81955fb109688.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/PackageManager/ProjectCache" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PackageManager/ProjectCache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/PackageManager/ProjectCache.md5" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PackageManager/ProjectCache.md5" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
@@ -856,6 +928,7 @@
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEngine.UI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEngine.UI.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEngine.UI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEngine.UI.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/Search/transactions.db" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Search/transactions.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB-lock" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB-lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/4d/4d2a36d9faf65734f0bbefb3ee623532.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/4d/4d2a36d9faf65734f0bbefb3ee623532.json" afterDir="false" />
@@ -863,13 +936,14 @@
       <change beforePath="$PROJECT_DIR$/Library/com.unity.ide.rider/PersistedState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/com.unity.ide.rider/PersistedState.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ilpp.pid" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ilpp.pid" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker1-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker1-prev.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker1.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker1.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker1.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MGD_2023_fs156_fb097.sln" beforeDir="false" afterPath="$PROJECT_DIR$/MGD_2023_fs156_fb097.sln" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Meryel.CodeAssist.Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Meryel.CodeAssist.Editor.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PsdPlugin.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PsdPlugin.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Unity.2D.Animation.Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Unity.2D.Animation.Editor.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Unity.2D.Animation.Runtime.Player.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Unity.2D.Animation.Runtime.Player.csproj" afterDir="false" />
@@ -937,9 +1011,8 @@
       <change beforePath="$PROJECT_DIR$/UnityEngine.TestRunner.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/UnityEngine.TestRunner.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UnityEngine.UI.Player.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/UnityEngine.UI.Player.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UnityEngine.UI.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/UnityEngine.UI.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.Player.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.Player.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Meryel.CodeAssist.Editor.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Meryel.CodeAssist.Editor.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/PsdPlugin.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/PsdPlugin.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Unity.2D.Animation.Editor.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Unity.2D.Animation.Editor.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Unity.2D.Animation.Runtime.Player.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Unity.2D.Animation.Runtime.Player.csproj.AssemblyReference.cache" afterDir="false" />
@@ -1013,17 +1086,47 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2ZfPDMXaxbSxUAvZfbusexwoUAL" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "git-widget-placeholder": "main",
-    "node.js.selected.package.tslint": "(autodetect)"
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\Bisen\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\Bisen\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\Bisen\\AppData\\Local\\Symbols\\src&quot;
+    ]
   }
-}]]></component>
-  <component name="RunManager">
+}</component>
+  <component name="RunManager" selected="Standalone Player.Start Unity">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="D:\Unity Hub\Editor\2022.3.12f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath D:\Github\MGD_2023_fs156_fb097 -debugCodeOptimization" />
@@ -1040,13 +1143,47 @@
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <method v="2" />
     </configuration>
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="86a76fba-6c2d-4215-bef4-f875ffd6db0b" name="Changes" comment="" />
+      <created>1702810042522</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1702810042522</updated>
+      <workItem from="1702810048128" duration="12931000" />
+      <workItem from="1702841625774" duration="320000" />
+    </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
 </project>
