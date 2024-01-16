@@ -390,6 +390,7 @@
 "Assets/Scripts/Fireball.cs"
 "Assets/Scripts/GameManager.cs"
 "Assets/Scripts/HeartController.cs"
+"Assets/Scripts/Menu.cs"
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/PlayerStateList.cs"
 "Assets/Scripts/SceneFader.cs"

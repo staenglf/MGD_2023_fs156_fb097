@@ -68,8 +68,8 @@
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@14.0.9\Editor\Lighting\Shadow\ShadowCascadeGUI.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@14.0.9\Editor\Utilities\EditorMaterialQuality.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@14.0.9\Editor\LookDev\CameraState.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@14.0.9\Editor\Lighting\ProbeVolume\ProbeGIBaking.Invalidation.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@14.0.9\Editor\Lighting\ProbeVolume\ProbeVolumeUI.Skin.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@14.0.9\Editor\Lighting\ProbeVolume\ProbeGIBaking.Invalidation.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@14.0.9\Editor\LookDev\EnvironmentLibrary.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@14.0.9\Editor\ContextualMenuDispatcher.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@14.0.9\Editor\Volume\VolumesPreferences.cs" />
