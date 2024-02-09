@@ -90,8 +90,24 @@ public class PlayerController : MonoBehaviour
     float castOrHealTimer;
     [Space(5)]
     
+    
+    // Mobile Touch Inputs
+    
+    
     [HideInInspector] public PlayerStateList pState;
     Animator anim;
+    
+    
+    //Input System
+    InputSystem controls;
+    
+    bool jumpbool = false;
+    // bool movementright = false;
+    bool attackbool = false;
+    bool castbool = false;
+    bool dashbool = false;
+    
+    
     private Rigidbody2D rb;
     private SpriteRenderer sr;
     private float xAxis, yAxis;
@@ -110,6 +126,42 @@ public class PlayerController : MonoBehaviour
     //Checks if a GameObject exists by start
     private void Awake()
     {
+        controls = new InputSystem();
+        controls.Enable();
+        
+        
+        // Touch Input System Bools and Calling Functions
+        controls.Land.Jump.performed += ctx =>
+        {
+            jumpbool = true;
+        };
+        
+        controls.Land.Attack.performed += ctx =>
+        {
+            attackbool = true;
+            Attack();
+        };
+        
+        controls.Land.Dash.performed += ctx =>
+        {
+            dashbool = true;
+            StartDash();
+        };
+        
+        controls.Land.Cast.performed += ctx =>
+        {
+            castbool = true;
+            CastSpell();
+        };
+        
+        controls.Land.Movement.performed += ctx =>
+        {
+            xAxis = ctx.ReadValue<float>();
+            yAxis = ctx.ReadValue<float>();
+            Debug.Log("direction" + xAxis);
+        };
+        
+        
         if(Instance != null && Instance != this)
         {
             Destroy(gameObject);
@@ -179,11 +231,11 @@ public class PlayerController : MonoBehaviour
     //Sets the input buttons
     void GetInputs()
     {
-        xAxis = Input.GetAxisRaw("Horizontal");
-        yAxis = Input.GetAxisRaw("Vertical");
+        // xAxis = Input.GetAxisRaw("Horizontal");
+        // yAxis = Input.GetAxisRaw("Vertical");
         attack = Input.GetButtonDown("Attack");
 
-        if(Input.GetButton("Cast/Heal"))
+        if(castbool)
         {
             castOrHealTimer += Time.deltaTime;
         } 
@@ -211,17 +263,24 @@ public class PlayerController : MonoBehaviour
     //Set the walking speed
     private void Move()
     {
-        rb.velocity = new Vector2(walkSpeed * xAxis, rb.velocity.y);
+        rb.velocity = new Vector2(walkSpeed * xAxis, rb.velocity.y); 
         anim.SetBool("Walking", rb.velocity.x != 0 && Grounded());
+            
+        if (controls.Land.Movement.WasReleasedThisFrame())
+        {
+            xAxis = 0;
+            yAxis = 0;
+        }
     }
 
     //Checks if a Dash is made on ground
     void StartDash()
     {
-        if (Input.GetButtonDown("Dash") && canDash && !dashed)
+        if (dashbool && canDash && !dashed)
         {
             StartCoroutine(Dash());
             dashed = true;
+            dashbool = false;
         }
 
         if (Grounded())
@@ -269,10 +328,11 @@ public class PlayerController : MonoBehaviour
     void Attack()
     {
         timeSinceAttack += Time.deltaTime;
-        if (attack && timeSinceAttack >= timeBetweenAttack) 
+        if (attackbool && timeSinceAttack >= timeBetweenAttack) 
         {
             timeSinceAttack = 0;
             anim.SetTrigger("Attacking");
+            attackbool = false;
             if(yAxis == 0 || yAxis < 0 && Grounded())
             {
                 Hit(SideAttackTransform, SideAttackArea, ref pState.recoilingX, recoilXSpeed);
@@ -513,10 +573,11 @@ public class PlayerController : MonoBehaviour
     
     void CastSpell()
     {
-        if (Input.GetButtonUp("Cast/Heal") && castOrHealTimer <= 0.05f && timeSinceCast >= timeBetweenCast && Mana >= manaSpellCost)
+        if (castbool && castOrHealTimer <= 0.05f && timeSinceCast >= timeBetweenCast && Mana >= manaSpellCost)
         {
             pState.casting = true;
             timeSinceCast = 0;
+            castbool = false;
             StartCoroutine(CastCoroutine());
         }
         else
@@ -606,20 +667,31 @@ public class PlayerController : MonoBehaviour
             pState.jumping = true;
         }
         
-        if (!Grounded() && airJumpCounter < maxAirJumps && Input.GetButtonDown("Jump"))
+        if (!Grounded() && airJumpCounter < maxAirJumps && jumpbool)
         {
             pState.jumping = true;
             airJumpCounter++;
             rb.velocity = new Vector3(rb.velocity.x, jumpForce);
         }
-
-        if (Input.GetButtonUp("Jump") && pState.jumping && rb.velocity.y > 3)
+        
+        /*
+        if (jumpbool && pState.jumping && rb.velocity.y > 3)
         {
             rb.velocity = new Vector2(rb.velocity.x, 0);
             pState.jumping = false;
+            Debug.Log("Jump3");
         }
-
-        anim.SetBool("Jumping", !Grounded());
+        */
+        
+        
+        if (jumpbool)
+        {
+            anim.SetBool("Jumping", !Grounded());
+            Debug.Log("Jump3" + jumpbool);
+            jumpbool = false;
+        }
+        
+        
     }
 
     //Overwrites the Jump Function by different executions
@@ -636,7 +708,7 @@ public class PlayerController : MonoBehaviour
             coyoteTimeCounter -= Time.deltaTime;
         }
 
-        if (Input.GetButtonDown("Jump"))
+        if (jumpbool)
         {
             jumpBufferCounter = jumpBufferFrames;
         }
@@ -645,4 +717,23 @@ public class PlayerController : MonoBehaviour
             jumpBufferCounter--;
         }
     }
+
+    public void UpButton()
+    {
+        
+    }
+
+
+    private void OnEnable()
+    {
+        controls.Enable();
+    }
+    
+    private void OnDisable()
+    {
+        controls.Disable();
+    }
+    
+    
+    
 }
