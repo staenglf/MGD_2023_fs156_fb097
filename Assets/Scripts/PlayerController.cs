@@ -82,6 +82,13 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float spellDamage; // for upspellexplosion and downspellfireball
     [SerializeField] float downSpellForce; // for desolate dive only
     
+    [Header("Camera Settings")]
+    [SerializeField] private float playerFallSpeedThreshold = -10;
+
+
+    
+    
+    
     // the objects cast by the spell
     [SerializeField] GameObject sideSpellFireball;
     [SerializeField] GameObject upSpellExplosion;
@@ -146,13 +153,15 @@ public class PlayerController : MonoBehaviour
         if (pState.cutscene) return;
         GetInputs();
         UpdateJumpVariables();
+        RestoreTimeScale();
+        UpdateCameraYDampForPlayerFall();
+        
         if (pState.dashing) return;
         Flip();
         Move();
         Jump();
         StartDash();
         Attack();
-        RestoreTimeScale();
         FlashWhileInvincible();
         Heal();
         CastSpell();
@@ -179,7 +188,9 @@ public class PlayerController : MonoBehaviour
     //Sets the input buttons
     void GetInputs()
     {
-        xAxis = Input.GetAxisRaw("Horizontal");
+        //xAxis = Input.GetAxisRaw("Horizontal");
+        xAxis = SimpleInput.GetAxis("Horizontal");
+        
         yAxis = Input.GetAxisRaw("Vertical");
         attack = Input.GetButtonDown("Attack");
 
@@ -215,8 +226,26 @@ public class PlayerController : MonoBehaviour
         anim.SetBool("Walking", rb.velocity.x != 0 && Grounded());
     }
 
+    
+    void UpdateCameraYDampForPlayerFall()
+    {
+        //if falling past a certain speed threshold
+        if (rb.velocity.y < playerFallSpeedThreshold && !CameraManager.Instance.isLerpingYDamping && !CameraManager.Instance.hasLerpedYDamping)
+        {
+            StartCoroutine(CameraManager.Instance.LerpYDamping(true));
+        }
+        //if standing stil or moving up
+        if(rb.velocity.y >= 0 && !CameraManager.Instance.isLerpingYDamping && CameraManager.Instance.hasLerpedYDamping)
+        {
+            //reset camera function
+            CameraManager.Instance.hasLerpedYDamping = false;
+            StartCoroutine(CameraManager.Instance.LerpYDamping(false));
+        }
+    }
+    
+    
     //Checks if a Dash is made on ground
-    void StartDash()
+    public void StartDash()
     {
         if (Input.GetButtonDown("Dash") && canDash && !dashed)
         {
@@ -266,7 +295,7 @@ public class PlayerController : MonoBehaviour
     }
 
     //Executes the Attack Animation
-    void Attack()
+    public void Attack()
     {
         timeSinceAttack += Time.deltaTime;
         if (attack && timeSinceAttack >= timeBetweenAttack) 
@@ -598,7 +627,7 @@ public class PlayerController : MonoBehaviour
     }
 
     //Executes the Jump and Double Jump Mechanic
-    void Jump()
+    public void Jump()
     {
         if (jumpBufferCounter > 0 && coyoteTimeCounter > 0 && !pState.jumping)
         {
