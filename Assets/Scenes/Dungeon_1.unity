@@ -39200,6 +39200,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7290292919047184323, guid: 3b7515a60fcdb404ba66f5bed1ff8491, type: 3}
+      propertyPath: maxHealth
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7290292919047184323, guid: 3b7515a60fcdb404ba66f5bed1ff8491, type: 3}
       propertyPath: manaStorage
       value: 
       objectReference: {fileID: 0}

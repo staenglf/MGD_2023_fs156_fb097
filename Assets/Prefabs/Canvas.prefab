@@ -88,7 +88,6 @@ GameObject:
   - component: {fileID: 144553348497475571}
   - component: {fileID: 2748823960766246073}
   - component: {fileID: 2158945848311215901}
-  - component: {fileID: 8146998108947685665}
   - component: {fileID: 5118421763757287703}
   m_Layer: 5
   m_Name: Canvas
@@ -182,20 +181,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &8146998108947685665
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1807292967658457053}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f2d67e563c457c4a8e4c54e9e3d7baf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  heartsParent: {fileID: 8084398372589873266}
-  heartContainerPrefab: {fileID: 6079418523981313003, guid: 12e14d73a157af547a32655c95a62de7, type: 3}
 --- !u!114 &5118421763757287703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -208,7 +193,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eebdeebf5c151bc4bbface36d698e411, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneFader: {fileID: 0}
+  sceneFader: {fileID: 6801469921562910782}
 --- !u!1 &2318875763172706879
 GameObject:
   m_ObjectHideFlags: 0
@@ -304,7 +289,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.00024414062, y: 0.000030517578}
+  m_AnchoredPosition: {x: 0.00024414062, y: 0}
   m_SizeDelta: {x: 0.0002, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3682527586098919681

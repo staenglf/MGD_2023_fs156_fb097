@@ -12,7 +12,7 @@ public class SceneTransition : MonoBehaviour
 
     private void Start()
     {
-        if(transitionTo == GameManager.Instance.transitionedFromScene)
+        if (GameManager.Instance.transitionedFromScene == transitionTo)
         {
             PlayerController.Instance.transform.position = startPoint.position;
             StartCoroutine(PlayerController.Instance.WalkIntoNewScene(exitDirection, exitTime));
