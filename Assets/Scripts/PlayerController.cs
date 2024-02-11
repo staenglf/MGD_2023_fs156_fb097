@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -171,7 +172,7 @@ public class PlayerController : MonoBehaviour
             Instance = this;
         }
 
-        DontDestroyOnLoad(gameObject);
+        //DontDestroyOnLoad(gameObject);
     }
 
     // Start is called before the first frame update
@@ -208,6 +209,12 @@ public class PlayerController : MonoBehaviour
         FlashWhileInvincible();
         Heal();
         CastSpell();
+
+
+        if (health == 0)
+        {
+            SceneManager.LoadScene(4);
+        }
     }
     
     // Only for the upwards and downwards spell cast
