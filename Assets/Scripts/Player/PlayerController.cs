@@ -95,6 +95,8 @@ public class PlayerController : MonoBehaviour
     
     
     // Mobile Touch Inputs
+    
+    
     [HideInInspector] public PlayerStateList pState;
     Animator anim;
     
@@ -318,7 +320,6 @@ public class PlayerController : MonoBehaviour
         canDash = true;
     }
 
-    // Sets the direction where a player walks into a new scene
     public IEnumerator WalkIntoNewScene(Vector2 _exitDir, float _delay)
     {
         if(_exitDir.y > 0)
@@ -464,7 +465,6 @@ public class PlayerController : MonoBehaviour
         StartCoroutine(StopTakingDamage());
     }
 
-    // Stops taking damage while invincible
     IEnumerator StopTakingDamage()
     {
         pState.invincible = true;
@@ -475,7 +475,6 @@ public class PlayerController : MonoBehaviour
         pState.invincible = false;
     }
 
-    // Sets the invincible material
     void FlashWhileInvincible()
     {
         sr.material.color = pState.invincible
@@ -484,7 +483,7 @@ public class PlayerController : MonoBehaviour
 
     }
     
-    // Time to Restore after attack
+    
     void RestoreTimeScale()
     {
         if (restoreTime)
@@ -501,7 +500,6 @@ public class PlayerController : MonoBehaviour
         }
     }
     
-    // Time after a hit
     public void HitStopTime(float _newTimeScale, int _restoreSpeed, float _delay)
     {
         restoreTimeSpeed = _restoreSpeed;
@@ -517,12 +515,15 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    // Time where the player can start again
     IEnumerator StartTimeAgain(float _delay)
     {
         restoreTime = true;
         yield return new WaitForSeconds(_delay);
     }
+    
+    
+    
+    
 
     //Sets the health of the player
     public int Health
@@ -542,7 +543,6 @@ public class PlayerController : MonoBehaviour
         }
     }
     
-    // The healing action of the player
     void Heal()
     {
         if (Input.GetButton("Cast/Heal") && castOrHealTimer > 0.05f && Health < maxHealth && Mana > 0 && !pState.jumping && !pState.dashing)
@@ -584,7 +584,7 @@ public class PlayerController : MonoBehaviour
         }
     }
     
-    // Start a cast
+    
     void CastSpell()
     {
         if (castbool && castOrHealTimer <= 0.05f && timeSinceCast >= timeBetweenCast && Mana >= manaSpellCost)
@@ -617,7 +617,8 @@ public class PlayerController : MonoBehaviour
         }
     }
     
-    // Execute the cast
+    
+    
     IEnumerator CastCoroutine()
     {
         anim.SetBool("Casting", true);
@@ -737,14 +738,11 @@ public class PlayerController : MonoBehaviour
             jumpBufferCounter--;
         }
     }
-
-    // Enables the player to control
     private void OnEnable()
     {
         controls.Enable();
     }
-
-    // Disables the player to control
+    
     private void OnDisable()
     {
         controls.Disable();

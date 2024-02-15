@@ -22,7 +22,6 @@ public class SceneFader : MonoBehaviour
         fadeOutUIImage = GetComponent<Image>();
     }
 
-    // The direction between scenes
     public IEnumerator Fade(FadeDirection _fadeDirection)
     {
         float _alpha = _fadeDirection == FadeDirection.Out ? 1 : 0;
@@ -50,7 +49,6 @@ public class SceneFader : MonoBehaviour
         }
     }
 
-    // Loads the new scene
     public IEnumerator FadeAndLoadScene(FadeDirection _fadeDirection, string _sceneToLoad)
     {
         fadeOutUIImage.enabled = true;
@@ -58,7 +56,6 @@ public class SceneFader : MonoBehaviour
         SceneManager.LoadScene(_sceneToLoad);
     }
 
-    // Sets the color between scenes
     void SetColorImage(ref float _alpha, FadeDirection _fadeDirection)
     {
         fadeOutUIImage.color = new Color(fadeOutUIImage.color.r, fadeOutUIImage.color.g, fadeOutUIImage.color.b);

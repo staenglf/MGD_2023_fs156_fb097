@@ -7,7 +7,6 @@ public class UIManager : MonoBehaviour
     public static UIManager Instance;
     public SceneFader sceneFader;
 
-    //Destroys the Level UI by load
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -19,10 +18,9 @@ public class UIManager : MonoBehaviour
             Instance = this;
         }
 
-        //DontDestroyOnLoad(gameObject);
+        DontDestroyOnLoad(gameObject);
     }
 
-    //Sets the Level UI
     private void Start()
     {
         sceneFader = GetComponentInChildren<SceneFader>();

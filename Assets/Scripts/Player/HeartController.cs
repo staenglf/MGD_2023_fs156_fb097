@@ -25,7 +25,12 @@ public class HeartController : MonoBehaviour
         UpdateHeartsHUD();
     }
 
-    // Build the lifetime
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
     void setHeartContainers()
     {
         for (int i = 0; i < heartContainers.Length; i++)
@@ -42,7 +47,6 @@ public class HeartController : MonoBehaviour
         }
     }
     
-    // Clears the hearts by hit
     void setFilledHearts()
     {
         for (int i = 0; i < heartFills.Length; i++)
@@ -58,7 +62,6 @@ public class HeartController : MonoBehaviour
         }
     }
 
-    // Set the hearts in the UI
     void instantiateHeartContainers()
     {
         for (int i = 0; i < PlayerController.Instance.maxHealth; i++)
@@ -70,7 +73,6 @@ public class HeartController : MonoBehaviour
         }
     }
 
-    // Function call
     void UpdateHeartsHUD()
     {
         setHeartContainers();

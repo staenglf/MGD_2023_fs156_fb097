@@ -9,13 +9,11 @@ public class FireBall : MonoBehaviour
     [SerializeField] int speed;
     [SerializeField] float lifetime = 1;
     
-    // Destroys after lifetime
     void Start()
     {
         Destroy(gameObject, lifetime);
     }
 
-    // Moves the fireball by every update
     private void FixedUpdate()
     {
         transform.position += speed * transform.right;
