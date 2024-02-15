@@ -7724,7 +7724,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 12
+  orthographic size: 8
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -17886,9 +17886,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7290292919047184323, guid: 3b7515a60fcdb404ba66f5bed1ff8491, type: 3}
+      propertyPath: manaGain
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7290292919047184323, guid: 3b7515a60fcdb404ba66f5bed1ff8491, type: 3}
       propertyPath: manaStorage
       value: 
       objectReference: {fileID: 2047531026}
+    - target: {fileID: 7290292919047184323, guid: 3b7515a60fcdb404ba66f5bed1ff8491, type: 3}
+      propertyPath: manaSpellCost
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7290292919047184323, guid: 3b7515a60fcdb404ba66f5bed1ff8491, type: 3}
+      propertyPath: manaDrainSpeed
+      value: 0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 9007912982820474236, guid: 3b7515a60fcdb404ba66f5bed1ff8491, type: 3}
       propertyPath: m_Name
       value: Player

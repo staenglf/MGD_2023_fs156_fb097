@@ -56,17 +56,6 @@ public class Enemy : MonoBehaviour
             rb.AddForce(-_hitForce * recoilFactor * _hitDirection);
         }
     }
-
-    /* had to be replaced with oncollisionstay2d because of buggy behavior
-    protected void OnTriggerStay2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player") && !PlayerController.Instance.pState.invincible)
-        {
-            Attack();
-            PlayerController.Instance.HitStopTime(0, 5, 0.5f);
-        }
-    }
-    */
     
     // Enemy gets a hit by player
     protected void OnCollisionStay2D(Collision2D _other)

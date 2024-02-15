@@ -93,17 +93,13 @@ public class PlayerController : MonoBehaviour
     float castOrHealTimer;
     [Space(5)]
     
-    
     // Mobile Touch Inputs
     [HideInInspector] public PlayerStateList pState;
     Animator anim;
     
-    
     //Input System
     InputSystem controls;
-    
     bool jumpbool = false;
-    // bool movementright = false;
     bool attackbool = false;
     bool castbool = false;
     bool dashbool = false;
@@ -162,7 +158,6 @@ public class PlayerController : MonoBehaviour
             Debug.Log("direction" + xAxis);
         };
         
-        
         if(Instance != null && Instance != this)
         {
             Destroy(gameObject);
@@ -171,25 +166,19 @@ public class PlayerController : MonoBehaviour
         {
             Instance = this;
         }
-
-        //DontDestroyOnLoad(gameObject);
     }
 
     // Start is called before the first frame update
     void Start()
     {
         pState = GetComponent<PlayerStateList>();
-        
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
-        
         anim = GetComponent<Animator>();
 
         gravity = rb.gravityScale;
-
         Mana = mana;
         manaStorage.fillAmount = Mana;
-
         Health = maxHealth;
     }
 
@@ -205,10 +194,10 @@ public class PlayerController : MonoBehaviour
         Flip();
         Move();
         Jump();
+        
         StartDash();
         Attack();
-        
-        // FlashWhileInvincible();
+        FlashWhileInvincible();
         Heal();
         CastSpell();
     }
@@ -221,8 +210,7 @@ public class PlayerController : MonoBehaviour
             _other.GetComponent<Enemy>().EnemyHit(spellDamage, (_other.transform.position - transform.position).normalized, -recoilYSpeed);
         }
     }
-
-
+    
     // When game is paused player wont be able to dash or recoil
     void FixedUpdate()
     {
@@ -315,6 +303,7 @@ public class PlayerController : MonoBehaviour
     // Sets the direction where a player walks into a new scene
     public IEnumerator WalkIntoNewScene(Vector2 _exitDir, float _delay)
     {
+        // the way the player leaves the door
         if(_exitDir.y > 0)
         {
             rb.velocity = jumpForce * _exitDir;
@@ -335,19 +324,23 @@ public class PlayerController : MonoBehaviour
     void Attack()
     {
         timeSinceAttack += Time.deltaTime;
+        
         if (attackbool && timeSinceAttack >= timeBetweenAttack) 
         {
             timeSinceAttack = 0;
             anim.SetTrigger("Attacking");
             attackbool = false;
+            
             if(yAxis == 0 || yAxis < 0 && Grounded())
             {
                 Hit(SideAttackTransform, SideAttackArea, ref pState.recoilingX, recoilXSpeed);
             }
+            
             else if(yAxis > 0)
             {
                 Hit(UpAttackTransform, UpAttackArea, ref pState.recoilingY, recoilYSpeed);
             }
+            
             else if(yAxis < 0 && !Grounded())
             {
                 Hit(DownAttackTransform, DownAttackArea, ref pState.recoilingY, recoilYSpeed);
@@ -407,6 +400,7 @@ public class PlayerController : MonoBehaviour
             }
             airJumpCounter = 0;
         }
+        
         else
         {
             rb.gravityScale = gravity;
@@ -421,7 +415,6 @@ public class PlayerController : MonoBehaviour
         {
             StopRecoilX();
         }
-
         if (pState.recoilingY && stepsYRecoiled < recoilYSteps)
         {
             stepsYRecoiled++;
@@ -430,7 +423,6 @@ public class PlayerController : MonoBehaviour
         {
             StopRecoilY();
         }
-
         if(Grounded()) 
         {
             StopRecoilY();
@@ -623,7 +615,7 @@ public class PlayerController : MonoBehaviour
         anim.SetBool("Casting", true);
         
         // value set here depends on animation can be adjusted
-        yield return new WaitForSeconds(0.15f);
+        yield return new WaitForSeconds(0.12f);
 
         //side cast
         if (yAxis == 0 || (yAxis < 0 && Grounded()))
@@ -659,7 +651,7 @@ public class PlayerController : MonoBehaviour
 
         Mana -= manaSpellCost;
         
-        yield return new WaitForSeconds(0.35f); //time from cast to end of animation
+        yield return new WaitForSeconds(0.25f); //time from cast to end of animation
         anim.SetBool("Casting", false);
         pState.casting = false;
     }
@@ -694,24 +686,12 @@ public class PlayerController : MonoBehaviour
             rb.velocity = new Vector3(rb.velocity.x, jumpForce);
         }
         
-        /*
-        if (jumpbool && pState.jumping && rb.velocity.y > 3)
-        {
-            rb.velocity = new Vector2(rb.velocity.x, 0);
-            pState.jumping = false;
-            Debug.Log("Jump3");
-        }
-        */
-        
-        
         if (jumpbool)
         {
             anim.SetBool("Jumping", !Grounded());
             Debug.Log("Jump3" + jumpbool);
             jumpbool = false;
         }
-        
-        
     }
 
     //Overwrites the Jump Function by different executions
@@ -727,7 +707,6 @@ public class PlayerController : MonoBehaviour
         {
             coyoteTimeCounter -= Time.deltaTime;
         }
-
         if (jumpbool)
         {
             jumpBufferCounter = jumpBufferFrames;
@@ -749,5 +728,4 @@ public class PlayerController : MonoBehaviour
     {
         controls.Disable();
     }
-    
 }

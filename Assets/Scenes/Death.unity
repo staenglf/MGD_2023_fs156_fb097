@@ -521,7 +521,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'You are death!
+  m_text: 'You have died! Try again!
 
 '
   m_isRightToLeft: 0
