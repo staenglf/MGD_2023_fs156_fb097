@@ -17,6 +17,7 @@ public class Enemy : MonoBehaviour
     protected float recoilTimer;
     protected Rigidbody2D rb;
 
+    // Creates the objects by start
     protected virtual void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -67,6 +68,7 @@ public class Enemy : MonoBehaviour
     }
     */
     
+    // Enemy gets a hit by player
     protected void OnCollisionStay2D(Collision2D _other)
     {
         if(_other.gameObject.CompareTag("Player") && !PlayerController.Instance.pState.invincible)
@@ -76,6 +78,7 @@ public class Enemy : MonoBehaviour
         }
     }
 
+    // Player gets a hit by enemy
     protected virtual void Attack()
     {
         PlayerController.Instance.TakeDamage(damage);

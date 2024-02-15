@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
     public string transitionedFromScene;
     public static GameManager Instance { get; private set; }
 
+    // Destroys the Gameobject
     private void Awake()
     {
         if(Instance != null && Instance != this)
