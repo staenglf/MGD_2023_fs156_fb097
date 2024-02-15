@@ -413,20 +413,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36fdff75477d5241bca679765c78c94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 20
+  walkSpeed: 13
   jumpForce: 45
   jumpBufferFrames: 8
   coyoteTime: 0.1
   maxAirJumps: 1
   groundCheckPoint: {fileID: 2440658237775709123}
   groundCheckY: 0.2
-  groundCheckX: 0.5
+  groundCheckX: 0.4
   whatIsGround:
     serializedVersion: 2
     m_Bits: 8
-  dashSpeed: 20
-  dashTime: 0.2
-  dashCooldown: 0.35
+  dashSpeed: 50
+  dashTime: 0.1
+  dashCooldown: 0.3
   dashEffect: {fileID: 3017303425323005697, guid: 05839d6e4e4c97f478906ef7dd692126, type: 3}
   SideAttackTransform: {fileID: 2420068486219795997}
   UpAttackTransform: {fileID: 5755103369861012613}
@@ -438,22 +438,22 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   damage: 2
-  recoilXSteps: 50
-  recoilYSteps: 50
-  recoilXSpeed: 100
-  recoilYSpeed: 32
-  health: 5
+  recoilXSteps: 10
+  recoilYSteps: 10
+  recoilXSpeed: 25
+  recoilYSpeed: 25
+  health: 8
   maxHealth: 10
   bloodSpurt: {fileID: 1448123892866767710, guid: 7e886910bac53af41919922d529f84ed, type: 3}
   hitFlashSpeed: 10
   timeToHeal: 1
   manaStorage: {fileID: 0}
-  mana: 0.5
+  mana: 0.8
   manaDrainSpeed: 0.2
   manaGain: 0.3
   manaSpellCost: 0.1
-  timeBetweenCast: 0.5
-  spellDamage: 10000
+  timeBetweenCast: 0.35
+  spellDamage: 100
   downSpellForce: 2
   sideSpellFireball: {fileID: 3789229946898094031, guid: 3934122279703fb41baba7f59147ae13, type: 3}
   upSpellExplosion: {fileID: 4611837621477904951, guid: 44f8370eea2ca87419990ceef82130a5, type: 3}
