@@ -211,12 +211,6 @@ public class PlayerController : MonoBehaviour
         // FlashWhileInvincible();
         Heal();
         CastSpell();
-
-
-        if (health == 0)
-        {
-            SceneManager.LoadScene(4);
-        }
     }
     
     // Only for the upwards and downwards spell cast
@@ -461,6 +455,12 @@ public class PlayerController : MonoBehaviour
     public void TakeDamage(float _damage)
     {
         Health -= Mathf.RoundToInt(_damage);
+
+        if (health == 0)
+        {
+            SceneManager.LoadScene(4);
+        }
+
         StartCoroutine(StopTakingDamage());
     }
 
