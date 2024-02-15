@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Zombie : Enemy
 {
+    //Creates the Enemy Instance Zombie
     protected override void Start()
     {
         base.Start();
@@ -11,6 +12,7 @@ public class Zombie : Enemy
     }
 
     // Update is called once per frame
+    // Sets the Movement of the specific enemy
     protected override void Update()
     {
         base.Update();
@@ -20,6 +22,7 @@ public class Zombie : Enemy
         }
     }
 
+    //Sets the damage of the specific enemy
     public override void EnemyHit(float _damageDone, Vector2 _hitDirection, float _hitForce)
     {
         base.EnemyHit(_damageDone, _hitDirection, _hitForce);

@@ -10,6 +10,7 @@ public class SceneTransition : MonoBehaviour
     [SerializeField] private Vector2 exitDirection;
     [SerializeField] private float exitTime;
 
+    // Stes the startpoint in  the new scene
     private void Start()
     {
         if(transitionTo == GameManager.Instance.transitionedFromScene)
@@ -21,6 +22,7 @@ public class SceneTransition : MonoBehaviour
         StartCoroutine(UIManager.Instance.sceneFader.Fade(SceneFader.FadeDirection.Out));
     }
 
+    // Puts the player into the right place
     private void OnTriggerEnter2D(Collider2D _other)
     {
         if(_other.CompareTag("Player"))
